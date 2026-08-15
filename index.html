@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Knowvio — Outbound Lead Generation & Qualified Customer Acquisition</title>
+<meta name="description" content="We find the interested customers. You close the deal. Knowvio runs targeted cold-calling campaigns that qualify prospects and hand them straight to your sales team.">
+
+<meta property="og:title" content="Knowvio — Outbound Lead Generation & Qualified Customer Acquisition">
+<meta property="og:description" content="Targeted calling. Qualified opportunities. Better sales conversations. We find the interested customers — you close the deal.">
+<meta property="og:type" content="website">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700;800&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+
+<!-- Three.js and Lenis via CDN -->
+<script type="importmap">
+{
+  "imports": {
+    "three": "https://unpkg.com/three@0.165.0/build/three.module.js",
+    "three/addons/": "https://unpkg.com/three@0.165.0/examples/jsm/",
+    "lenis": "https://unpkg.com/lenis@1.1.20/dist/lenis.mjs"
+  }
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "name": "Knowvio",
+  "description": "Outbound lead generation and qualified customer acquisition through targeted cold calling.",
+  "serviceType": ["Cold Calling", "Lead Generation", "Lead Qualification", "Appointment Setting"]
+}
+</script>
+</head>
+<body>
+
+<!-- ============ NAV ============ -->
+<nav class="nav">
+  <div class="container nav-inner">
+    <a href="index.html" class="logo"><span class="logo-mark"></span>Knowvio</a>
+    <div class="nav-links">
+      <a href="#services">Services</a>
+      <a href="#industries">Industries</a>
+      <a href="#how-it-works">How It Works</a>
+      <a href="#case-studies">Case Studies</a>
+      <a href="#pricing">Pricing</a>
+      <a href="about.html">About</a>
+    </div>
+    <div class="nav-cta">
+      <a href="contact.html" class="btn btn-secondary">Discuss Your Campaign</a>
+      <a href="book-a-call.html" class="btn btn-primary">Book a Free Strategy Call</a>
+    </div>
+    <button class="menu-toggle" aria-label="Menu"><span></span></button>
+  </div>
+  <div class="mobile-panel">
+    <a href="#services">Services</a>
+    <a href="#industries">Industries</a>
+    <a href="#how-it-works">How It Works</a>
+    <a href="#case-studies">Case Studies</a>
+    <a href="#pricing">Pricing</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+    <a href="book-a-call.html" class="btn btn-primary btn-block">Book a Free Strategy Call</a>
+  </div>
+</nav>
+
+<!-- ============ HERO ============ -->
+<header class="hero">
+  <canvas id="hero-canvas" class="hero-canvas" aria-hidden="true"></canvas>
+  <div class="container hero-grid">
+    <div class="hero-copy reveal">
+      <h1>We find the interested customers.<span class="line-2">You close the deal.</span></h1>
+      <p class="lede">We help businesses generate qualified sales opportunities through targeted cold calling, lead qualification, and structured lead handovers — so your sales team spends its time closing, not chasing.</p>
+      <div class="hero-ctas">
+        <a href="book-a-call.html" class="btn btn-primary">Book a Free Strategy Call</a>
+        <a href="#how-it-works" class="btn btn-secondary">See How It Works</a>
+      </div>
+      <div class="hero-note">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>
+        No inflated numbers — every claim on this site is either real or clearly labelled as illustrative.
+      </div>
+    </div>
+    <div class="reveal">
+      <div class="pipeline-card">
+        <span class="small-label">Our model, at a glance</span>
+        <div class="pipeline">
+          <div class="pipeline-step owner-us" data-step><span class="connector"></span><span class="dot"></span><span class="label">Cold Prospect</span></div>
+          <div class="pipeline-step owner-us" data-step><span class="connector"></span><span class="dot"></span><span class="label">Conversation</span></div>
+          <div class="pipeline-step owner-us" data-step><span class="connector"></span><span class="dot"></span><span class="label">Interested</span><span class="tag">Us</span></div>
+          <div class="pipeline-step owner-us" data-step><span class="connector"></span><span class="dot"></span><span class="label">Qualified</span><span class="tag">Us</span></div>
+          <div class="pipeline-step owner-us" data-step><span class="connector"></span><span class="dot"></span><span class="label">Lead Handover</span><span class="tag">Us</span></div>
+          <div class="pipeline-step owner-client" data-step><span class="connector"></span><span class="dot"></span><span class="label">Your Sales Team</span><span class="tag">You</span></div>
+          <div class="pipeline-step owner-client" data-step><span class="dot"></span><span class="label">Customer</span><span class="tag">You</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- ============ VALUE STRIP ============ -->
+<section class="value-strip">
+  <div class="container">
+    <div class="section-head center reveal">
+      <span class="eyebrow">Why it works</span>
+      <h2>A simpler way to build your sales pipeline.</h2>
+    </div>
+    <div class="value-grid reveal">
+      <div class="value-item"><span class="num">01</span><h4>Targeted Outreach</h4><p>Reach the right prospects.</p></div>
+      <div class="value-item"><span class="num">02</span><h4>Genuine Conversations</h4><p>Understand actual interest.</p></div>
+      <div class="value-item"><span class="num">03</span><h4>Qualified Leads</h4><p>Filter prospects before handover.</p></div>
+      <div class="value-item"><span class="num">04</span><h4>Transparent Process</h4><p>Know what happens at every stage.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PROBLEM / SOLUTION ============ -->
+<section id="problem">
+  <div class="container problem-grid">
+    <div class="reveal">
+      <span class="eyebrow">The problem</span>
+      <h2 style="margin-bottom:32px;">Your sales team should be closing — not chasing cold prospects.</h2>
+      <ul class="problem-list">
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 8v4l3 3"/></svg>Sales teams spend hours prospecting instead of selling.</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 8v4l3 3"/></svg>Large lead lists often contain unqualified contacts.</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 8v4l3 3"/></svg>Salespeople waste time calling prospects with no real interest.</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 8v4l3 3"/></svg>Follow-ups become inconsistent as pipelines grow.</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 8v4l3 3"/></svg>Potential opportunities get missed or go cold.</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 8v4l3 3"/></svg>Building an internal calling team is expensive and slow.</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 8v4l3 3"/></svg>Businesses struggle to keep a consistent pipeline full.</li>
+      </ul>
+    </div>
+    <div class="reveal">
+      <div class="solution-panel">
+        <span class="small-label">The solution</span>
+        <h3>We handle the prospecting work so your sales team can focus on closing.</h3>
+        <p>Knowvio runs the top of your funnel — finding, calling and qualifying prospects — and hands you only the ones worth your team's time.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SERVICES ============ -->
+<section id="services">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Services</span>
+      <h2>Everything between "cold" and "qualified."</h2>
+      <p>We build the top and middle of your funnel — from first outreach to a qualified, documented handover.</p>
+    </div>
+    <div class="services-grid reveal">
+      <div class="service-card">
+        <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg></div>
+        <h3>Cold Calling</h3>
+        <p>Targeted outbound calls to potential customers based on your ideal customer profile.</p>
+      </div>
+      <div class="service-card">
+        <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg></div>
+        <h3>Lead Generation</h3>
+        <p>Identify potential customers across selected niches, industries, locations and customer profiles.</p>
+      </div>
+      <div class="service-card">
+        <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg></div>
+        <h3>Lead Qualification</h3>
+        <p>Identify prospects who genuinely meet your qualification criteria.</p>
+        <ul>
+          <li>Requirement &amp; interest</li>
+          <li>Location &amp; business type</li>
+          <li>Decision-maker status</li>
+          <li>Purchase timeline</li>
+        </ul>
+      </div>
+      <div class="service-card">
+        <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg></div>
+        <h3>Appointment Setting</h3>
+        <p>Where applicable, convert interested prospects into sales calls, meetings, demos, consultations or site visits.</p>
+      </div>
+      <div class="service-card">
+        <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 1l4 4-4 4M3 11V9a4 4 0 0 1 4-4h14M7 23l-4-4 4-4M21 13v2a4 4 0 0 1-4 4H3"/></svg></div>
+        <h3>Follow-Up Calling</h3>
+        <p>Where included in the campaign scope, we support callbacks and follow-up conversations.</p>
+      </div>
+      <div class="service-card">
+        <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M9 15l2 2 4-4"/></svg></div>
+        <h3>Qualified Lead Handover</h3>
+        <p>Relevant prospect information delivered to your sales team.</p>
+        <ul>
+          <li>Name, company, phone, location</li>
+          <li>Requirement &amp; interest level</li>
+          <li>Calling remarks &amp; next action</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ OUR MODEL / RESPONSIBILITY SPLIT ============ -->
+<section style="background:var(--bg-soft);">
+  <div class="container">
+    <div class="section-head center reveal">
+      <span class="eyebrow">Our model</span>
+      <h2>We build the top of your sales funnel.</h2>
+    </div>
+    <div class="model-flow reveal">
+      <span class="chip">Target Market</span><span class="arrow">→</span>
+      <span class="chip">Prospecting</span><span class="arrow">→</span>
+      <span class="chip">Cold Calling</span><span class="arrow">→</span>
+      <span class="chip">Interest ID</span><span class="arrow">→</span>
+      <span class="chip">Qualification</span><span class="arrow">→</span>
+      <span class="chip">Handover</span><span class="arrow">→</span>
+      <span class="chip">Client Follow-Up</span><span class="arrow">→</span>
+      <span class="chip">Closing</span>
+    </div>
+    <div class="responsibility-grid reveal">
+      <div class="resp-card us">
+        <span class="small-label">Us</span>
+        <h3>Our Responsibility</h3>
+        <ul>
+          <li>Prospecting</li>
+          <li>Cold calling</li>
+          <li>Initial conversation</li>
+          <li>Interest identification</li>
+          <li>Lead qualification</li>
+          <li>Lead notes</li>
+          <li>Lead handover</li>
+        </ul>
+      </div>
+      <div class="resp-card client">
+        <span class="small-label">You</span>
+        <h3>Client Responsibility</h3>
+        <ul>
+          <li>Follow-up</li>
+          <li>Product explanation</li>
+          <li>Demo</li>
+          <li>Negotiation</li>
+          <li>Closing</li>
+          <li>Customer onboarding</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ HOW IT WORKS ============ -->
+<section id="how-it-works">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">How it works</span>
+      <h2>From cold call to qualified opportunity.</h2>
+    </div>
+    <div class="timeline reveal">
+      <div class="timeline-step">
+        <span class="timeline-num">01</span>
+        <div class="timeline-body">
+          <h3>Understand Your Business</h3>
+          <p>We learn your product or service, ideal customer, target market, geography, calling objective and qualification criteria.</p>
+        </div>
+      </div>
+      <div class="timeline-step">
+        <span class="timeline-num">02</span>
+        <div class="timeline-body">
+          <h3>Define Your Target</h3>
+          <p>We identify the right audience and prospect segments to call.</p>
+        </div>
+      </div>
+      <div class="timeline-step">
+        <span class="timeline-num">03</span>
+        <div class="timeline-body">
+          <h3>Start Calling</h3>
+          <p>Our calling team reaches potential customers and introduces your offering.</p>
+        </div>
+      </div>
+      <div class="timeline-step">
+        <span class="timeline-num">04</span>
+        <div class="timeline-body">
+          <h3>Identify Interest</h3>
+          <p>We determine where each prospect stands.</p>
+          <div class="taglist"><span>Not Interested</span><span>Call Back</span><span>Maybe</span><span>Interested</span><span>Qualified</span></div>
+        </div>
+      </div>
+      <div class="timeline-step">
+        <span class="timeline-num">05</span>
+        <div class="timeline-body">
+          <h3>Qualify &amp; Handover</h3>
+          <p>Interested prospects are checked against agreed criteria, then handed to your sales team.</p>
+        </div>
+      </div>
+      <div class="timeline-step">
+        <span class="timeline-num">06</span>
+        <div class="timeline-body">
+          <h3>You Close</h3>
+          <p>Your sales team follows up, negotiates, demonstrates the offering and closes the customer.</p>
+        </div>
+      </div>
+    </div>
+    <div class="timeline-final reveal">
+      <h3>We generate the opportunity. <span>You convert the opportunity.</span></h3>
+    </div>
+  </div>
+</section>
+
+<!-- ============ LEAD PIPELINE (SIGNATURE) ============ -->
+<section class="pipeline-full">
+  <div class="container">
+    <div class="section-head center reveal">
+      <span class="eyebrow">The pipeline</span>
+      <h2>Every prospect moves through the same eight stages.</h2>
+      <p>A consistent, trackable path from first dial to converted customer — built so a CRM can plug straight into it.</p>
+    </div>
+    <div class="pipeline-track reveal">
+      <div class="stage" data-step><span class="ring">01</span><h4>Prospect</h4><p>Identified as a target-fit contact.</p></div>
+      <div class="stage" data-step><span class="ring">02</span><h4>Contacted</h4><p>A call has been placed.</p></div>
+      <div class="stage" data-step><span class="ring">03</span><h4>Connected</h4><p>Prospect answered and engaged.</p></div>
+      <div class="stage" data-step><span class="ring">04</span><h4>Interested</h4><p>Genuine interest expressed.</p></div>
+      <div class="stage" data-step><span class="ring">05</span><h4>Qualified</h4><p>Meets agreed criteria.</p></div>
+      <div class="stage" data-step><span class="ring">06</span><h4>Handed Over</h4><p>Sent to your sales team.</p></div>
+      <div class="stage" data-step><span class="ring">07</span><h4>Follow-Up</h4><p>Your team is in conversation.</p></div>
+      <div class="stage" data-step><span class="ring">08</span><h4>Converted</h4><p>Prospect becomes a customer.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ WHY CHOOSE US ============ -->
+<section>
+  <div class="container">
+    <div class="section-head center reveal">
+      <span class="eyebrow">Why partner with us</span>
+      <h2>Built around quality conversations, not call volume.</h2>
+    </div>
+    <div class="cards-grid reveal">
+      <div class="plain-card"><h4>Focused Prospecting</h4><p>We take prospecting work off your sales team's plate.</p></div>
+      <div class="plain-card"><h4>Targeted Outreach</h4><p>Campaigns are built around your target customer.</p></div>
+      <div class="plain-card"><h4>Qualification Before Handover</h4><p>We don't simply send raw contact lists.</p></div>
+      <div class="plain-card"><h4>Customized Scripts</h4><p>Messaging is tailored to your business.</p></div>
+      <div class="plain-card"><h4>Transparent Reporting</h4><p>Understand campaign activity and lead status.</p></div>
+      <div class="plain-card"><h4>Flexible Campaigns</h4><p>Adapts to different industries and requirements.</p></div>
+      <div class="plain-card"><h4>Human Conversations</h4><p>Meaningful conversations over blind call-volume targets.</p></div>
+      <div class="plain-card"><h4>Scalable Outreach</h4><p>Expand outbound activity without growing your internal team.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ INDUSTRIES ============ -->
+<section id="industries" style="background:var(--bg-soft);">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Industries</span>
+      <h2>Built for different sales-driven businesses.</h2>
+      <p>Campaigns can be customized for industries including:</p>
+    </div>
+    <div class="industry-grid reveal">
+      <span class="industry-chip">Real Estate</span>
+      <span class="industry-chip">SaaS</span>
+      <span class="industry-chip">IT Services</span>
+      <span class="industry-chip">Education</span>
+      <span class="industry-chip">Healthcare</span>
+      <span class="industry-chip">Finance</span>
+      <span class="industry-chip">Insurance</span>
+      <span class="industry-chip">Automotive</span>
+      <span class="industry-chip">Logistics</span>
+      <span class="industry-chip">Manufacturing</span>
+      <span class="industry-chip">Recruitment</span>
+      <span class="industry-chip">Marketing Agencies</span>
+      <span class="industry-chip">Professional Services</span>
+      <span class="industry-chip">E-commerce</span>
+      <span class="industry-chip">Business Services</span>
+    </div>
+    <p class="disclaimer-note reveal">Listed as customizable campaign categories — not a claim of prior campaign history in each.</p>
+  </div>
+</section>
+
+<!-- ============ CAMPAIGN EXAMPLES ============ -->
+<section>
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Campaign examples</span>
+      <h2>What a campaign could look like.</h2>
+      <p>These are illustrative scenarios showing how our process adapts across industries — not records of actual client campaigns.</p>
+    </div>
+    <div class="example-grid reveal">
+      <div class="example-card">
+        <div class="example-flag">Illustrative example</div>
+        <div class="example-body">
+          <h3>Real Estate</h3>
+          <div class="example-row"><span class="k">Target</span><span class="v">Property buyers / investors</span></div>
+          <div class="example-row"><span class="k">Goal</span><span class="v">Identify interested buyers</span></div>
+          <div class="example-row"><span class="k">Process</span><span class="v">Calling → Interest → Qualification → Site visit / handover</span></div>
+        </div>
+      </div>
+      <div class="example-card">
+        <div class="example-flag">Illustrative example</div>
+        <div class="example-body">
+          <h3>SaaS</h3>
+          <div class="example-row"><span class="k">Target</span><span class="v">Business owners / decision makers</span></div>
+          <div class="example-row"><span class="k">Goal</span><span class="v">Identify companies interested in the software</span></div>
+          <div class="example-row"><span class="k">Process</span><span class="v">Calling → Qualification → Demo appointment → Follow-up</span></div>
+        </div>
+      </div>
+      <div class="example-card">
+        <div class="example-flag">Illustrative example</div>
+        <div class="example-body">
+          <h3>Education</h3>
+          <div class="example-row"><span class="k">Target</span><span class="v">Students / parents</span></div>
+          <div class="example-row"><span class="k">Goal</span><span class="v">Identify genuine course / admission enquiries</span></div>
+          <div class="example-row"><span class="k">Process</span><span class="v">Calling → Interest → Qualification → Counselling handover</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ REPORTING DASHBOARD ============ -->
+<section style="background:var(--bg-soft);">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Reporting</span>
+      <h2>Know what's happening with your campaign.</h2>
+    </div>
+    <div class="dash-card reveal">
+      <div class="dash-header">
+        <span class="small-label">Campaign overview — this week</span>
+        <span class="dash-flag">Sample campaign dashboard</span>
+      </div>
+      <div class="dash-grid">
+        <div class="dash-stat"><span class="small-label">Calls Attempted</span><div class="stat-value">1,240</div></div>
+        <div class="dash-stat"><span class="small-label">Calls Connected</span><div class="stat-value">486</div></div>
+        <div class="dash-stat"><span class="small-label">Decision Makers Reached</span><div class="stat-value">211</div></div>
+        <div class="dash-stat"><span class="small-label">Interested Prospects</span><div class="stat-value accent">78</div></div>
+        <div class="dash-stat"><span class="small-label">Qualified Leads</span><div class="stat-value accent">34</div></div>
+        <div class="dash-stat"><span class="small-label">Leads Handed Over</span><div class="stat-value success">34</div></div>
+        <div class="dash-stat"><span class="small-label">Callbacks</span><div class="stat-value">52</div></div>
+        <div class="dash-stat"><span class="small-label">Appointments</span><div class="stat-value success">19</div></div>
+      </div>
+      <div class="dash-bar-wrap">
+        <div class="dash-bar-row"><span class="bar-label">Connected</span><div class="dash-bar-track"><div class="dash-bar-fill" style="width:39%;"></div></div><span class="bar-num">39%</span></div>
+        <div class="dash-bar-row"><span class="bar-label">Interested</span><div class="dash-bar-track"><div class="dash-bar-fill" style="width:16%;"></div></div><span class="bar-num">16%</span></div>
+        <div class="dash-bar-row"><span class="bar-label">Qualified</span><div class="dash-bar-track"><div class="dash-bar-fill" style="width:7%;"></div></div><span class="bar-num">7%</span></div>
+      </div>
+    </div>
+    <p class="disclaimer-note reveal">Illustrative data for layout purposes only — not the performance of any real campaign.</p>
+  </div>
+</section>
+
+<!-- ============ LEAD HANDOVER EXAMPLE ============ -->
+<section>
+  <div class="container" style="display:flex; flex-wrap:wrap; gap:56px; align-items:center; justify-content:space-between;">
+    <div class="reveal" style="max-width:460px;">
+      <span class="eyebrow">Lead handover</span>
+      <h2 style="margin-bottom:18px;">Exactly what you'll receive.</h2>
+      <p class="lede">Every qualified lead arrives with the context your sales team needs to pick up the conversation immediately — no cold, unexplained contact list.</p>
+    </div>
+    <div class="reveal">
+      <div class="lead-card">
+        <div class="lead-card-header">
+          <span class="small-label">Qualified Lead</span>
+          <span class="lead-status">Interested — High</span>
+        </div>
+        <div class="lead-body">
+          <div class="lead-row"><span class="k">Name</span><span class="v">Prospect Name</span></div>
+          <div class="lead-row"><span class="k">Company</span><span class="v">Example Company</span></div>
+          <div class="lead-row"><span class="k">Location</span><span class="v">Delhi NCR</span></div>
+          <div class="lead-row"><span class="k">Requirement</span><span class="v">Example requirement</span></div>
+          <div class="lead-row"><span class="k">Timeline</span><span class="v">Short-term</span></div>
+          <div class="lead-row"><span class="k">Next Action</span><span class="v">Client follow-up</span></div>
+          <div class="lead-flag">Illustrative example — not a real client record</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PROOF / CASE STUDIES ============ -->
+<section id="case-studies" style="background:var(--bg-soft);">
+  <div class="container">
+    <div class="section-head center reveal">
+      <span class="eyebrow">Proof</span>
+      <h2>Proof over promises.</h2>
+      <p>We believe results should be demonstrated through real campaign data, not inflated marketing claims.</p>
+    </div>
+    <div class="coming-soon-grid reveal">
+      <div class="cs-card">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18M8 4v5"/></svg>
+        <div class="cs-title">Case study coming soon</div>
+        <div class="cs-sub">Verified results will appear here</div>
+      </div>
+      <div class="cs-card">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18M8 4v5"/></svg>
+        <div class="cs-title">Case study coming soon</div>
+        <div class="cs-sub">Verified results will appear here</div>
+      </div>
+      <div class="cs-card">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18M8 4v5"/></svg>
+        <div class="cs-title">Case study coming soon</div>
+        <div class="cs-sub">Verified results will appear here</div>
+      </div>
+    </div>
+    <div class="testimonial-placeholder reveal" style="margin-top:24px;">
+      <p>Client testimonials will be published here as we complete campaigns and receive verified feedback.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PRICING ============ -->
+<section id="pricing">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Partnership model</span>
+      <h2>A flexible structure, not a fixed package.</h2>
+      <p>Pricing depends on campaign size, industry, target market, calling volume, and qualification requirements — discussed and agreed during onboarding.</p>
+    </div>
+    <div class="pricing-grid reveal">
+      <div class="price-card">
+        <span class="month-tag">Month 1</span>
+        <h3>Fixed Campaign Fee</h3>
+        <div class="price-tag">An agreed fixed monthly fee covers campaign setup and operation.</div>
+        <ul>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>Understand the business</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>Set up the campaign</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>Test messaging</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>Start outreach &amp; measure lead quality</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>Establish workflow, build confidence</li>
+        </ul>
+      </div>
+      <div class="price-card highlight">
+        <span class="month-tag">Month 2 onward</span>
+        <h3>Fixed Fee + Performance Commission</h3>
+        <div class="price-tag">Same agreed fixed campaign fee, plus a <span class="commission">proposed 20%</span> performance commission — subject to the final commercial agreement.</div>
+        <ul>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>Commission basis mutually agreed</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>Eligible conversions defined upfront</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>Lead attribution &amp; conversion tracking</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>Payment timing set in the agreement</li>
+        </ul>
+        <div class="price-terms">
+          <span>Refunds &amp; cancellations</span><span>Reporting</span><span>Lead validity</span>
+        </div>
+      </div>
+    </div>
+    <div style="text-align:center; margin-top:40px;" class="reveal">
+      <a href="contact.html" class="btn btn-primary">Discuss Your Campaign</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONFIDENCE ============ -->
+<section style="background:var(--bg-soft);">
+  <div class="container">
+    <div class="section-head center reveal">
+      <span class="eyebrow">Partnership</span>
+      <h2>Confidence works both ways.</h2>
+      <p>We understand that businesses need confidence before committing to a new lead-generation partner — and that a successful partnership requires commitment from both sides.</p>
+    </div>
+    <div class="confidence-flow reveal">
+      <span class="cf-item">Agreed campaign fee</span><span class="cf-op">→</span>
+      <span class="cf-item">Run the campaign</span><span class="cf-op">→</span>
+      <span class="cf-item">Measure lead quality</span><span class="cf-op">→</span>
+      <span class="cf-item">Build confidence</span><span class="cf-op">→</span>
+      <span class="cf-item">Performance-aligned model</span>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FAQ ============ -->
+<section>
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">FAQ</span>
+      <h2>Common questions.</h2>
+    </div>
+    <div class="faq-list reveal">
+      <div class="faq-item">
+        <button class="faq-q">What exactly do you do?<span class="plus"></span></button>
+        <div class="faq-a"><p>We identify potential customers, contact them through outbound calling, identify genuine interest, qualify prospects and hand over qualified opportunities to your sales team.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">Do you close the customer?<span class="plus"></span></button>
+        <div class="faq-a"><p>Our primary responsibility is lead generation and qualification. Your sales team handles final follow-up and closing, unless a different scope is agreed.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">What is a qualified lead?<span class="plus"></span></button>
+        <div class="faq-a"><p>A prospect who meets the agreed qualification criteria and has demonstrated genuine interest.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">Can you target specific niches?<span class="plus"></span></button>
+        <div class="faq-a"><p>Yes. Campaigns can be customized around specific niches, industries, locations and customer profiles.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">Do you provide the prospect list?<span class="plus"></span></button>
+        <div class="faq-a"><p>This depends on the campaign. Prospect sourcing responsibilities are agreed during onboarding.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">How are leads handed over?<span class="plus"></span></button>
+        <div class="faq-a"><p>Qualified prospects can be shared through an agreed system such as a CRM, spreadsheet, dashboard, or another workflow.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">Do you provide reports?<span class="plus"></span></button>
+        <div class="faq-a"><p>Yes. Campaign reporting can include calling activity, connected prospects, interested prospects, qualified leads, handovers and appointments.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">How does pricing work?<span class="plus"></span></button>
+        <div class="faq-a"><p>The current proposed model begins with an agreed fixed campaign fee, followed by the same base fee plus performance commission from the second month onward, subject to the final agreement.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">What is the 20% commission?<span class="plus"></span></button>
+        <div class="faq-a"><p>20% is the currently proposed performance commission. The exact commission basis and commercial terms are mutually agreed before the campaign begins.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">Do you guarantee sales?<span class="plus"></span></button>
+        <div class="faq-a"><p>No. We generate and qualify opportunities. Final conversion depends on your offering, pricing, follow-up, sales process and other factors.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FINAL CTA ============ -->
+<section>
+  <div class="container">
+    <div class="final-cta reveal">
+      <span class="eyebrow" style="color:rgba(255,255,255,0.7);">Get started</span>
+      <h2>Ready to build your sales pipeline?</h2>
+      <p>Tell us who you want to reach. We'll help you build a targeted calling campaign designed to find people who are genuinely interested.</p>
+      <div class="hero-ctas">
+        <a href="book-a-call.html" class="btn btn-primary">Book a Free Strategy Call</a>
+        <a href="contact.html" class="btn btn-secondary">Discuss Your Campaign</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ DISCLAIMER STRIP ============ -->
+<div class="disclaimer-strip">
+  <div class="container">
+    <p>Lead generation does not guarantee final sales. Conversion depends on the client's product or service, pricing, follow-up process and sales execution.</p>
+  </div>
+</div>
+
+<!-- ============ FOOTER ============ -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="logo">Knowvio</a>
+        <p>Outbound lead generation and qualified customer acquisition through targeted calling.</p>
+      </div>
+      <div>
+        <h4>Services</h4>
+        <ul>
+          <li><a href="#services">Cold Calling</a></li>
+          <li><a href="#services">Lead Generation</a></li>
+          <li><a href="#services">Lead Qualification</a></li>
+          <li><a href="#services">Appointment Setting</a></li>
+          <li><a href="#services">Lead Handover</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Company</h4>
+        <ul>
+          <li><a href="about.html">About</a></li>
+          <li><a href="#how-it-works">How It Works</a></li>
+          <li><a href="#industries">Industries</a></li>
+          <li><a href="#case-studies">Case Studies</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Resources</h4>
+        <ul>
+          <li><a href="#" data-faq-link>FAQ</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms &amp; Conditions</a></li>
+        </ul>
+        <h4 style="margin-top:24px;">Contact</h4>
+        <ul>
+          <li><a href="mailto:hello@knowvio.com">hello@knowvio.com</a></li>
+          <li><a href="tel:+911234567890">+91 12345 67890</a></li>
+          <li><a href="https://wa.me/911234567890">WhatsApp</a></li>
+          <li><a href="#">LinkedIn</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Knowvio. All rights reserved.</span>
+      <span>Made for businesses who'd rather close than cold-call.</span>
+    </div>
+  </div>
+</footer>
+
+<!-- ============ MOBILE STICKY CTA ============ -->
+<div class="mobile-sticky">
+  <a href="tel:+911234567890" class="btn btn-secondary">Call</a>
+  <a href="https://wa.me/911234567890" class="btn btn-secondary">WhatsApp</a>
+  <a href="book-a-call.html" class="btn btn-primary">Book a Call</a>
+</div>
+
+<script type="module" src="script.js"></script>
+</body>
+</html>

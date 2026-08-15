@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact — Knowvio</title>
+<meta name="description" content="Tell us about your campaign requirements and we'll get back to you with next steps.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700;800&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+
+<!-- Three.js and Lenis via CDN -->
+<script type="importmap">
+{
+  "imports": {
+    "three": "https://unpkg.com/three@0.165.0/build/three.module.js",
+    "three/addons/": "https://unpkg.com/three@0.165.0/examples/jsm/",
+    "lenis": "https://unpkg.com/lenis@1.1.20/dist/lenis.mjs"
+  }
+}
+</script>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="container nav-inner">
+    <a href="index.html" class="logo"><span class="logo-mark"></span>Knowvio</a>
+    <div class="nav-links">
+      <a href="index.html#services">Services</a>
+      <a href="index.html#industries">Industries</a>
+      <a href="index.html#how-it-works">How It Works</a>
+      <a href="index.html#case-studies">Case Studies</a>
+      <a href="index.html#pricing">Pricing</a>
+      <a href="about.html">About</a>
+    </div>
+    <div class="nav-cta">
+      <a href="contact.html" class="btn btn-secondary">Discuss Your Campaign</a>
+      <a href="book-a-call.html" class="btn btn-primary">Book a Free Strategy Call</a>
+    </div>
+    <button class="menu-toggle" aria-label="Menu"><span></span></button>
+  </div>
+  <div class="mobile-panel">
+    <a href="index.html#services">Services</a>
+    <a href="index.html#industries">Industries</a>
+    <a href="index.html#how-it-works">How It Works</a>
+    <a href="index.html#case-studies">Case Studies</a>
+    <a href="index.html#pricing">Pricing</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+    <a href="book-a-call.html" class="btn btn-primary btn-block">Book a Free Strategy Call</a>
+  </div>
+</nav>
+
+<header class="page-header">
+  <div class="container">
+    <div class="breadcrumb"><a href="index.html">Home</a> / Contact</div>
+    <span class="eyebrow">Get in touch</span>
+    <h1>Let's build your lead generation campaign.</h1>
+    <p class="lede">Share a few details about your business and target customer, and we'll come back with next steps.</p>
+  </div>
+</header>
+
+<section>
+  <div class="container contact-layout">
+    <div class="contact-side reveal">
+      <h3 style="margin-bottom:8px;">Prefer to reach out directly?</h3>
+      <p style="margin-bottom:8px; font-size:0.92rem;">Use whichever works best for you.</p>
+      <div class="info-item">
+        <span class="small-label">Email</span>
+        <div class="v"><a href="mailto:hello@knowvio.com">hello@knowvio.com</a></div>
+      </div>
+      <div class="info-item">
+        <span class="small-label">Phone</span>
+        <div class="v"><a href="tel:+911234567890">+91 12345 67890</a></div>
+      </div>
+      <div class="info-item">
+        <span class="small-label">WhatsApp</span>
+        <div class="v"><a href="https://wa.me/911234567890">Message on WhatsApp</a></div>
+      </div>
+      <div class="info-item">
+        <span class="small-label">LinkedIn</span>
+        <div class="v"><a href="#">Knowvio on LinkedIn</a></div>
+      </div>
+      <div class="info-item" style="border-bottom:none;">
+        <span class="small-label">Prefer a call?</span>
+        <div class="v"><a href="book-a-call.html" style="color:var(--accent-2);">Book a free strategy call →</a></div>
+      </div>
+    </div>
+
+    <div class="reveal">
+      <div class="form-card">
+        <form data-form data-success="#contact-success">
+          <div class="form-grid">
+            <div class="field"><label for="name">Full Name</label><input id="name" type="text" required placeholder="Your name"></div>
+            <div class="field"><label for="company">Company Name</label><input id="company" type="text" required placeholder="Your company"></div>
+            <div class="field"><label for="email">Work Email</label><input id="email" type="email" required placeholder="you@company.com"></div>
+            <div class="field"><label for="phone">Phone / WhatsApp</label><input id="phone" type="tel" required placeholder="+91"></div>
+            <div class="field"><label for="industry">Industry</label>
+              <select id="industry">
+                <option>Real Estate</option><option>SaaS</option><option>IT Services</option>
+                <option>Education</option><option>Healthcare</option><option>Finance</option>
+                <option>Insurance</option><option>Automotive</option><option>Logistics</option>
+                <option>Manufacturing</option><option>Recruitment</option><option>Marketing Agency</option>
+                <option>Professional Services</option><option>E-commerce</option><option>Other</option>
+              </select>
+            </div>
+            <div class="field"><label for="location">Target Location</label><input id="location" type="text" placeholder="e.g. Delhi NCR, Pan-India"></div>
+            <div class="field full"><label for="product">Product / Service</label><input id="product" type="text" placeholder="What are you selling?"></div>
+            <div class="field full"><label for="customer">Target Customer</label><input id="customer" type="text" placeholder="Who is your ideal customer?"></div>
+            <div class="field"><label for="requirement">Campaign Requirement</label><input id="requirement" type="text" placeholder="e.g. Qualified leads, appointments"></div>
+            <div class="field"><label for="volume">Expected Calling Volume</label><input id="volume" type="text" placeholder="e.g. 1,000 calls / month"></div>
+            <div class="field full"><label for="notes">Additional Information</label><textarea id="notes" placeholder="Anything else we should know"></textarea></div>
+          </div>
+          <button type="submit" class="btn btn-primary" style="margin-top:24px;">Request a Strategy Call</button>
+        </form>
+        <div id="contact-success" class="form-success">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M8 12l3 3 5-6"/></svg>
+          <h3 style="margin-bottom:10px;">Thank you.</h3>
+          <p>We'll review your requirements and get back to you shortly.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="logo">Knowvio</a>
+        <p>Outbound lead generation and qualified customer acquisition through targeted calling.</p>
+      </div>
+      <div>
+        <h4>Services</h4>
+        <ul>
+          <li><a href="index.html#services">Cold Calling</a></li>
+          <li><a href="index.html#services">Lead Generation</a></li>
+          <li><a href="index.html#services">Lead Qualification</a></li>
+          <li><a href="index.html#services">Appointment Setting</a></li>
+          <li><a href="index.html#services">Lead Handover</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Company</h4>
+        <ul>
+          <li><a href="about.html">About</a></li>
+          <li><a href="index.html#how-it-works">How It Works</a></li>
+          <li><a href="index.html#industries">Industries</a></li>
+          <li><a href="index.html#case-studies">Case Studies</a></li>
+          <li><a href="index.html#pricing">Pricing</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Resources</h4>
+        <ul>
+          <li><a href="index.html#faq">FAQ</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms &amp; Conditions</a></li>
+        </ul>
+        <h4 style="margin-top:24px;">Contact</h4>
+        <ul>
+          <li><a href="mailto:hello@knowvio.com">hello@knowvio.com</a></li>
+          <li><a href="tel:+911234567890">+91 12345 67890</a></li>
+          <li><a href="https://wa.me/911234567890">WhatsApp</a></li>
+          <li><a href="#">LinkedIn</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Knowvio. All rights reserved.</span>
+      <span>Made for businesses who'd rather close than cold-call.</span>
+    </div>
+  </div>
+</footer>
+
+<div class="mobile-sticky">
+  <a href="tel:+911234567890" class="btn btn-secondary">Call</a>
+  <a href="https://wa.me/911234567890" class="btn btn-secondary">WhatsApp</a>
+  <a href="book-a-call.html" class="btn btn-primary">Book a Call</a>
+</div>
+
+<script type="module" src="script.js"></script>
+</body>
+</html>
